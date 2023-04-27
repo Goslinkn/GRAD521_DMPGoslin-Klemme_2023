@@ -1,15 +1,33 @@
 # Data description
+The basic research question I have been working on is what the association between is 4 different accelerometry metrics. Vector magnitude activity counts (VMNF), Euclidean norm minus one (ENMO). Mean amplitude deviation (MAD) and monitor independent movement summary (MIMS) units. In accelerometer data collected during the objective physical activity measurement of the 2011-2014 cycles of the National Health and Nutritional Examination Survey (NHANES) all of the accelerometry metrics are used. This has frustrated the field of physical activity measurement and epidemiology due to some labs only being equipped or familiar with one metric of monitoring accelerometer based physical activity. So the raw accelerometer data from approximately 20,000 individuals from the 2011-214 NHANES assessed with correlation associations. 
+For this particular paper we need to collect and separate the 4 different accelerometry metrics obtained and then run linear regression analysis and correlation associations in R. This is technically human subjects data as it is part of the objective physical activity monitoring but there is a different process with the OSU IRB because all subjects have been de-identified to only a sequence number and some accounted for redistribution of weights. So, it is essentially just a large publicly available set of easy to use human subjects data. NHANES is divided into 2 year cycles so I need to combine the 2011-2012 and 2013-2014 cycles into one dataset and run analyses on all metrics together. 
+    a.	Final numerical results upon completion of both regression and correlational analysis in R. I would say the results are experimental as we have a hypothesis of what the results will show but no real ideas of the actual answer. (Could this be model output? We’re using a linear regression model so that makes sense, but the results don’t have to be linear).
+    b.	We download the raw (massive) accelerometer data from NHANES on my advisors lab computers. Then the ZIP files are sent to me via email where I can then read them into R and work with them. Once the initial download (which can last days) occurs its fairly easy for this study to simply identify the variables we want to work with (accelerometry metrics) and then use R to run the regression and correlation analysis. 
+My final R file is taking up roughly 1.5GB on my computer. If you also include manuscripts with reported results and tables, then less than 2GB is a good estimate. However the raw accelerometer data is huge and has to get parsed down via my advisors computer into a compressed ZIP file for me to even access with my much less modern and lower storage laptop. I think its over 2TB when working with all 20,000 subjects with each individual having days (at least 4 valid days) of PA in all 4 accelerometry metrics which are all typically measured in per minute intervals, so the files are huge.
 
-Copy paste waht you wrote in DMP1
 
 #Roles and Responsibilities
 
-DMP2
+There are two of us in the lab responsible for our current projects. Which deals with epidemiological physical activity data from various accelerometer-based metrics coming from the National Health and Nutrition Examination Survey (NHANES). So, in this instance I will refer to those responsible for the DMP as the PI and Grad student 1. Grad student 1 is responsible for the preservation and management of data, there is not sensitive and protected data involved in our current projects however, data is stored on both a personal password protected laptop, a hard drive and a lab computer which is always locked when not in use. Instrumentation maintenance is the PI’s responsibility as he updates the lab computer and works to provide me with updated R software and reporting techniques when they become available. Data organization and metadata are graduate student 1’s responsibility as they create different variables and run analysis on the NHANES data which needs to be carefully stored in an organized folder system. To this point we haven’t had a set DMP but as I implement what I have learned in this course I would say this falls on Graduate student 1. Data analysis is also graduate student 1’s responsibility to generate initial analysis and then the quality control of the analysis and other parts of the DMP are overviewed by the PI. Some quality control is also provided by a 2nd graduate student. Grad student 2 is purely a reviewer and does not have a primary role in the DMP. 
+•	Who is responsible for the implementation of the DMP- Graduate Student 1.
+•	Other data management responsibilities. If these are not self-explanatory provide a definition. Is there any formal definition of roles and responsibilities in your research project? Who is going to take in each of these roles in your project? No need to give me the actual names of people, you can say "PI" or "Grad student 2". 
+o	I would add in a facilitator role- meaning someone who is making sure data is being analyzed, saved, stored and presented via a research manuscript in a timely fashion which is discussed weekly with the PI and is the primary responsibility of graduate student 1. 
+•	Contingency plans: what would happen if somebody with data management responsibilities left the project?
+o	This is not particularly applicable here. As in this instance if the PI left, I wouldn’t have an advisor and if graduate student 1 left a new graduate student would take over. 
+National Health and Nutrition Examination Survey (NHANES) data is publicly available, a collection of survey questions, and all subject data is deidentified to a base sequence number to protect participant identity. Making this a nonconfidential data project. There is the general understanding that we would abide by the NHANES policy of not trying to discover the identities of any of the participants in the NHANES. 
+ 3 places for backup purposes. 1st graduate student 1’s password protected personal computer. 2nd an external hard drive that graduate student 1 keeps locked in the PI’s lab. 3rd files stored on a lab computer that never leaves the lab. 
+ 3 copies, 1 on each of the devices described in part 3. 
+Automatic for word and PowerPoint files. R must be saved manually periodically to be safe. 
+ Microsoft office programs, and R. I suppose we use the documentation portion of the NHANES website as well. 
+ We do not although I have wondered about this. Will consider adding. 
+ Not currently using a cloud system. 
+
 
 #Data standards and metadata
 
 #Storage and Security
-
+3 places for backup purposes. 1st graduate student 1’s password protected personal computer. 2nd an external hard drive that graduate student 1 keeps locked in the PI’s lab. 3rd files stored on a lab computer that never leaves the lab.
+3 copies, 1 on each of the devices described in part 3.
 #Access and Data Sharing
 
 #Archiving and Preservation
